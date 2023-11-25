@@ -1,6 +1,7 @@
 import {db} from '../firebase';
 import {addDoc, collection} from 'firebase/firestore'
 import { useFormInput } from '../hooks';
+import { Link } from "react-router-dom";
 
 function CreatePost() {
   
@@ -44,7 +45,6 @@ function CreatePost() {
               {...content}
             />
           </div>
-
           <button className="create-post-btn">Create Post</button>
         </form>
 
